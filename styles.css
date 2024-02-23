@@ -1,11 +1,74 @@
 /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
+/* Reset default margin and padding */
+html, body {
     margin: 0;
     padding: 0;
 }
 
+/* Style the navigation */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the header */
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-size: 40px;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 10px;
+    color: #888;
+    font-size: 30px;
+}
+
+/* Style the paragraph */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bottom-links {
+    text-align: center;
+    margin-top: 10px;
+    color: #888;
+    font-family: Verdana;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: justify;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for sidebar */
 .container {
     display: flex;
     justify-content: center;
