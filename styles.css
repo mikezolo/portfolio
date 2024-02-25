@@ -104,13 +104,14 @@ h5 {
 
 .container {
     display: flex;
-    padding: 0 10px;
+    padding: 10px;
     justify-content: left;
     align-items: flex-start;
     text-align: left;
     max-width: 800px; 
     min-width: 300px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .sidebar {
