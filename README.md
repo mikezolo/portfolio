@@ -33,11 +33,16 @@ Welcome to my portfolio! This project serves as my portfolio page, showcasing my
 
 ## Skills
 
-- Python
+- Python 3
+- Pytest
 - Django
 - HTML
 - CSS
 - Git
+- SQLite 3
+
+## Certification
+To view the related certificates, please visit my Certificates ![page]{https://mikezolo/github.io/certificates)
 
 ## Contact
 
