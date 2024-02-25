@@ -152,8 +152,8 @@ h5 {
 
 .project img {
     display: flex;
-    height: auto;
-    width: 150px;
+    height: 300;
+    width: 120px;
     border-radius: 5px;
 }
 
