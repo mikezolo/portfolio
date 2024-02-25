@@ -5,7 +5,7 @@ Welcome to my portfolio! This project serves as my portfolio page, showcasing my
 ## Projects
 
 ### Project 1: Excursion App
-![Excursion App Preview](/path/to/excursion-preview.png)
+![Excursion App Preview](https://mikezolo.github.io/portfolio/resources/excursion-preview1.png)
 
 - **Description**: 
   The Excursion App is a project that demonstrates my proficiency in HTML, CSS, and Git. It is a simple web application developed using these technologies.
@@ -14,7 +14,7 @@ Welcome to my portfolio! This project serves as my portfolio page, showcasing my
 - **Live Demo**: [Excursion App Demo](https://mikezolo.github.io/excursion)
 
 ### Project 2: PhySec App
-![PhySec App Preview](/path/to/physec-preview.png)
+![PhySec App Preview](/physec-preview.png)
 
 - **Description**: 
   The PhySec App is a Django project showcasing my skills in backend development with Django. It includes features related to physical security management.
