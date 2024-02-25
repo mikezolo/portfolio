@@ -18,6 +18,10 @@ nav {
     position: static;
     top: 0;
     width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav button {
@@ -43,28 +47,36 @@ button:hover {
 
 #ukraine {
     font-size: 18px;
+    font-weight: normal;
     height: 40px;
     padding: 4px 5px 1px;
+}
+
+#email-text {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* This removes the underline */
 }
 
 #email {
     width: 50px;
     height: 40px;
-    font-size: 28px;
-    padding: 0 5px 20px;
-    margin: 0 5px 1px;
-    border: 0 5px 1px;
-}
-
-#email-text {
-    padding: 0;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the icon vertically */
 }
 
 /* Style the header */
+h1 {}
+
 h2 {
+    position: relative;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0px;
+    padding: 20px 10px 20px;
     font-size: 50px;
+    color: #000;
 }
 
 h3 {
@@ -74,46 +86,26 @@ h3 {
     font-size: 40px;
 }
 
+h4 {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 30px;
+}
+
 h5 {
     text-align: center;
     margin-top: 10px;
     color: #888;
-    font-size: 30px;
-}
+    font-size: 20px;
 
-/* Style the paragraph */
-p {
-    text-align: center;
-    margin-top: 20px;
 }
-
-.bottom-links {
-    text-align: center;
-    margin-top: 10px;
-    color: #888;
-    font-family: Verdana;
-}
-
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: justify;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    padding: 5px 16px 16px;
-}
-
- footer a {
-    color: white;
-    text-align: center;
- }
 
 /* Additional styles for sidebar */
+
 .container {
     display: flex;
+    padding-left: 10px;
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
@@ -153,38 +145,49 @@ footer {
     border-radius: 5px;
 }
 
-footer {
+
+/* Style the paragraph */
+p {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.navbar {
-    background-color: #eee; /* Changed background color */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar a {
-    margin: 0 10px;
-    text-decoration: none;
-    background-color: #fff; /* Added background color */
-    padding: 8px 16px; /* Added padding */
-}
-
-.navbar a:hover {
-    background-color: #ddd; /* Hover background color */
-}
-
-.navbar button {
-    background-color: transparent;
-    border: none;
-    color: #333;
-    cursor: pointer;
+.infoblock {
     font-size: 16px;
+    font-weight: lighter;
+    color: #666;
+    min-width: 300px;
+    margin-top: 240px;
 }
 
-.navbar button:hover {
-    color: #888; /* Hover text color */
+.bottom-links {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: larger; 
+}   
+
+.bottom-links a {
+    color: #333;
+    font-weight: 300;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: justify;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 5px 16px 16px;
+}
+
+ footer a {
+    color: white;
+    text-align: center;
+ }
