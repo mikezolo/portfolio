@@ -1,26 +1,63 @@
 /* styles.css */
 
 /* Reset default margin and padding */
-html, body {
+
+* {
     margin: 0;
     padding: 0;
+    border: none;
+    font-family: Tahoma;
+    text-align: center;
+    position: relative;
 }
 
 /* Style the navigation */
 nav {
     background-color: #333;
     padding: 10px;
-    text-align: center;
+    position: static;
+    top: 0;
+    width: 100%;
 }
 
 nav button {
     background-color: #fff;
     color: #333;
     border: none;
-    padding: 8px 16px;
-    margin: 0 5px;
+    border-radius: 3px;
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bolder;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: #666;
+    color: white;
+    border: 2px #000;
+}
+
+#ukraine {
+    font-size: 18px;
+    height: 40px;
+    padding: 4px 5px 1px;
+}
+
+#email {
+    width: 50px;
+    height: 40px;
+    font-size: 28px;
+    padding: 0 5px 20px;
+    margin: 0 5px 1px;
+    border: 0 5px 1px;
+}
+
+#email-text {
+    padding: 0;
 }
 
 /* Style the header */
