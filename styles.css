@@ -107,21 +107,18 @@ h5 {
 
 .container {
     display: flex;
-    padding: 20px;
-    justify-content: left;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: flex-start;
     text-align: left;
-    max-width: 800px; 
     min-width: 300px;
-    margin: 10px auto;
+    margin: 30px 10px;
 }
 
 .sidebar {
-    background-color: #eee; /* Changed background color */
-    padding: 10px;
-    border-right: 1px solid #ccc;
+    background-color: #ddd; /* Changed background color */
+    border: 3px solid #ccc;
     width: auto;
-    margin-right: 10px;
 }
 
 .sidebar a {
@@ -129,33 +126,48 @@ h5 {
     margin: 10px;
     color: #333;
     text-decoration: none;
-    font-weight: bolder;
     background-color: #fff; /* Added background color */
     padding: 8px 16px; /* Added padding */
     text-align: left;
+    border-radius: 3px;
+    border: 5px #777;
+    font-weight: bolder;
+    width: 250px;
+    transition-duration: 0.1s;
 }
 
 .sidebar a:hover {
-    background-color: #ddd; /* Hover background color */
+    background-color: #666; /* Hover background color */
+    color: #fff;
 }
 
 .main-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 10px;
     margin-left: 10px;
-    width: 300px;
 }
 
 .project {
-    width: calc(50% - 20px); /* Adjust width to fit two projects side by side */
-    margin: 10px; /* Add margin to separate projects */
+    display: block;
+    align-items: center;
+    background-color: #ddd;
+    padding: 5px 10px;
+    justify-content: center;
 }
 
 .project img {
-    display: flex;
-    height: 220px;
+    display: block;
+    height: 200px;
     width: 150px;
     border-radius: 5px;
+}
+
+.project img a:hover {
+    background-color: #666; /* Hover background color */
+    color: #fff;
 }
 
 /*PARAGRAPH Settings*/
