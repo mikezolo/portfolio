@@ -5,7 +5,7 @@ Welcome to my portfolio! This project serves as my portfolio page, showcasing my
 ## Projects
 
 ### Project 1: Excursion App
-![Excursion App Preview](https://mikezolo.github.io/portfolio/resources/excursion-preview1.png)
+![Excursion App Preview](https://mikezolo.github.io/portfolio/resources/excursion-preview1-small.png)
 
 - **Description**: 
   The Excursion App is a project that demonstrates my proficiency in HTML, CSS, and Git. It is a simple web application developed using these technologies.
