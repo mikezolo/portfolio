@@ -129,6 +129,7 @@ h5 {
     margin: 10px;
     color: #333;
     text-decoration: none;
+    font-weight: bolder;
     background-color: #fff; /* Added background color */
     padding: 8px 16px; /* Added padding */
     text-align: left;
