@@ -68,8 +68,6 @@ button:hover {
 }
 
 /* Style the header */
-h1 {}
-
 h2 {
     position: relative;
     text-align: center;
@@ -88,9 +86,10 @@ h3 {
 
 h4 {
     text-align: center;
-    margin-top: 20px;
-    color: #666;
-    font-size: 30px;
+    margin-top: 15px;
+    color: #777;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 h5 {
@@ -98,24 +97,27 @@ h5 {
     margin-top: 10px;
     color: #888;
     font-size: 20px;
-
+    font-weight: 500;
 }
 
 /* Additional styles for sidebar */
 
 .container {
     display: flex;
-    padding-left: 10px;
-    justify-content: center;
+    padding: 0 10px;
+    justify-content: left;
     align-items: flex-start;
-    margin-top: 20px;
+    text-align: left;
+    max-width: 800px; 
+    min-width: 300px;
+    margin: 0 auto;
 }
 
 .sidebar {
     background-color: #eee; /* Changed background color */
     padding: 20px;
     border-right: 1px solid #ccc;
-    width: 200px;
+    width: auto;
 }
 
 .sidebar a {
@@ -125,6 +127,7 @@ h5 {
     text-decoration: none;
     background-color: #fff; /* Added background color */
     padding: 8px 16px; /* Added padding */
+    text-align: left;
 }
 
 .sidebar a:hover {
@@ -133,10 +136,12 @@ h5 {
 
 .main-content {
     margin-left: 20px;
+    width: auto;
 }
 
 .project {
     margin-bottom: 40px;
+    width: auto;
 }
 
 .project img {
@@ -148,8 +153,11 @@ h5 {
 
 /* Style the paragraph */
 p {
-    text-align: center;
-    margin-top: 20px;
+    text-align: justify;
+    display: flex;
+    max-width: 800px; /* Limiting paragraph width */
+    min-width: 300px;
+    margin: 0 auto; /* Centering the paragraph horizontally */
 }
 
 .infoblock {
