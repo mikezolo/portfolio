@@ -1,11 +1,12 @@
-/* MIKEZOLO/PORTFOLIO styles.css */
+/* mikezolo / PORTFOLIO / styles.css */
 
-/* Reset default margin and padding */
+/* * * --------------  GENERAL RULES  -------------- * * */
 * {
     font-family: Tahoma;
     text-align: center;
 }
 
+/* Reset default margin and padding */
 body {
     position: relative;
     margin: 0;
@@ -13,8 +14,9 @@ body {
     border: none;
 }
 
-/* TOP NAV BAR Settings */
+/* * * ------------ INHERITABLE elements  ------------ * * */ 
 
+/* TOP NAV BAR Settings */
 nav {
     background-color: #333;
     padding: 10px;
@@ -56,23 +58,17 @@ button:hover {
     padding: 4px 5px 1px;
 }
 
-#email-text {
-    display: flex;
-    align-items: center;
-    text-decoration: none; /* This removes the underline */
-}
-
 #email {
     width: 50px;
     height: 40px;
     font-size: 36px;
+    text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center; /* This centers the icon vertically */
+    align-items: center; /* Center the icon vertically */
 }
 
 /* HEADERS Settings */
-
 h1, h2, h3, h4, h5 {
     position: relative;
     text-align: center;
@@ -103,8 +99,84 @@ h5 {
     font-weight: 500;
 }
 
-/*SIDEBAR and SIDE NAV Settings */
+/* PARAGRAPH settings*/
+p {
+    text-align: justify;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 10px auto; /* Centering the paragraph horizontally */
+    padding: 10px;
+}
 
+/* INFO BLOCK settings */
+.infoblock {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #666;
+    min-width: 300px;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto; /* Center horizontally*/
+    padding: 10px;
+}
+
+/* CONTACT BLOCK */
+.contact
+  .detailer {
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.contact a {
+    position: sticky;
+    margin: 20px auto;
+    color: #000;
+    font-weight: 500;
+    font-size: larger;
+    text-decoration: none;
+    text-align: center;
+    border: #000 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+    background-color: #eee;
+}
+
+/* FOOTER BLOCK */
+footer {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    padding: 5px 16px 10px;
+    width: 100%;
+}
+
+/* Footer specific settings */
+footer p {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    min-width: 300px;
+    max-width: 100%;
+}
+
+footer a {
+    color: white;
+    margin-left: 15px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 0; /* Reset margin to remove default spacing */
+}
+
+/* * * -------------  PAGE-SPECIFIC SETTINGS (local)  ------------- * * */
+
+/* PROJECTS BLOCK */
+/* BLOCK settings */
 .container {
     display: flex;
     flex-wrap: nowrap;
@@ -115,8 +187,9 @@ h5 {
     margin: 30px 10px;
 }
 
+/* SIDE NAV BAR settings*/
 .sidebar {
-    background-color: #ddd; /* Changed background color */
+    background-color: #ddd;
     border: 3px solid #ccc;
     min-width: 300px;
 }
@@ -126,8 +199,8 @@ h5 {
     margin: 10px;
     color: #333;
     text-decoration: none;
-    background-color: #fff; /* Added background color */
-    padding: 8px 16px; /* Added padding */
+    background-color: #fff;
+    padding: 8px 16px;
     text-align: left;
     border-radius: 3px;
     border: 5px #777;
@@ -137,10 +210,11 @@ h5 {
 }
 
 .sidebar a:hover {
-    background-color: #666; /* Hover background color */
+    background-color: #666;
     color: #fff;
 }
 
+/* PROJECT catalogue div settings */
 .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -167,77 +241,6 @@ h5 {
 }
 
 .project img a:hover {
-    background-color: #666; /* Hover background color */
+    background-color: #666;
     color: #fff;
-}
-
-/*PARAGRAPH Settings*/
-p {
-    text-align: justify;
-    max-width: 1000px;
-    min-width: 300px;
-    margin: 10px auto; /* Centering the paragraph horizontally */
-    padding: 10px;
-}
-
-.infoblock {
-    font-size: 16px;
-    font-weight: lighter;
-    color: #666;
-    min-width: 300px;
-    max-width: 1000px;
-    text-align: center;
-    margin: auto; /* Center horizontally*/
-    padding: 10px;
-}
-
-.contact a {
-    position: sticky;
-    margin: 20px auto;
-    color: #000;
-    font-weight: 500;
-    font-size: larger;
-    text-decoration: none;
-    text-align: center;
-    border: #000 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10px;
-    background-color: #eee;
-}
-
-.contact
-  .detailer {
-    font-weight: bold;
-    color: #666;
-    text-decoration: none;
-    background-color: #fff;
-}
-
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    height: 35px;
-    padding: 5px 16px 10px;
-    width: 100%;
-}
-
-footer p {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    min-width: 300px;
-    max-width: 100%;
-}
-
-footer a {
-    color: white;
-    margin-left: 15px;
-}
-
-.copyright {
-    text-align: center;
-    margin: 0; /* Reset margin to remove default spacing */
 }
