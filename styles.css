@@ -239,7 +239,8 @@ footer a {
 }
 
 .project p {
-    max-width: 180px;
+    max-width: 160px;
+    margin: 0 10px;
 }
 
 .project img {
