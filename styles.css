@@ -62,10 +62,15 @@ button:hover {
     width: 50px;
     height: 40px;
     font-size: 36px;
-    text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center the icon vertically */
+    align-items: center; /* Center the icon vertically */    
+}
+
+#email-text {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 /* HEADERS Settings */
