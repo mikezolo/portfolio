@@ -239,7 +239,7 @@ footer a {
 }
 
 .project p {
-    max-width: 160px;
+    width: 160px;
     margin: 0 10px;
 }
 
