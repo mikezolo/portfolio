@@ -11,8 +11,8 @@
 }
 
 body {
-    margin: 70px 0 50px;
-}
+    margin-top: 70px; /* Ensure body content starts below the nav bar */
+    padding-top: 0; /* Reset padding-top */}
 
 /* UPPER NAV BAR Settings */
 nav {
