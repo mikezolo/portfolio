@@ -1,10 +1,15 @@
+<!--MIKEZOLO/PORTFOLIO index.html-->
 <!DOCTYPE html>
 <html>
+
+<!--HEAD (customized)-->
 <head>
     <title>Portfolio - Michael Zolotarenko</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
+
+<!--TOP NAV BAR (inheritable)-->
     <nav>
         <a href="https://mikezolo.github.io"><button>Home</button></a>
         <a href="https://mikezolo.github.io/portfolio"><button>Portfolio</button></a>
@@ -14,59 +19,92 @@
         <a href="https://www.freedombirds.help" target="_blank"><button id="ukraine">Help Ukraine 🇺🇦</button></a>
         <a id="email-text" href="mailto:mike.zolotarenko@gmail.com"><button id="email">✉︎</button></a>
     </nav>
-    <hr/>
-    <h4>Michael Zolotarenko</h4>
-    <h5>Python Developer</h5>
-    <h2>Portfolio Projects</h2>
+    <hr>
 
-    <div class="container">
-        <div class="sidebar">
-            <a href="https://mikezolo.github.io/excursion" target="_blank">HTML-CSS-Git: Excursion app</a>
-            <a href="resources/under-constr-big.png" target="_blank">Django & SQLite: PhySec app (⚒︎)</a>
-            <a href="resources/under-constr-big.png" target="_blank">Project 3 (⚒︎)</a>
-            <a href="resources/under-constr-big.png" target="_blank">Project 4 (⚒︎)</a>
+<!--UNIVERSAL HEADER (inheritable)-->
+        <h4>Michael Zolotarenko</h4>
+        <h5>Python Developer</h5>
+        <hr>
+
+<!--PAGE HEADING(S) (customized)-->
+        <h2>Portfolio Projects</h2>
+
+<!--PROJECTS CONTAINER (local)-->
+        <div class="container">
+
+            <!--SIDE NAV BAR (local)-->
+            <div class="sidebar">
+                <a href="https://mikezolo.github.io/excursion" target="_blank">HTML-CSS-Git: Excursion app</a>
+                <a href="resources/under-constr-big.png" target="_blank">Django & SQLite: PhySec app (⚒︎)</a>
+                <a href="resources/under-constr-big.png" target="_blank">Project 3 (⚒︎)</a>
+                <a href="resources/under-constr-big.png" target="_blank">Project 4 (⚒︎)</a>
+            </div>
+
+            <!--PROJECT PREVIEW BLOCK (local)-->
+            <div class="main-content">
+
+                <!--Object 1-->
+                <div class="project">
+                    <a href="https://mikezolo.github.io/excursion" target="_blank"><img src="resources/excursion-preview1.png" alt="Excursion Project"></a>
+                    <p><a href="https://github.com/mikezolo/excursion" target="_blank" alt="Excursion Poject at GitHub">Excursion Repo</a>:</p>
+                    <p>Git-CSS-HTML</p>
+                </div>
+
+                <!--Object 2-->
+                <div class="project">
+                    <img src="resources/under-constr-3x4-small.png" alt="PhySec Project">
+                    <p><a href="https://github.com/mikezolo/physec" target="_blank" alt="PhySec Poject at GitHub">PhySec Repo</a>:</p>
+                    <p>Django & SQLite</p>
+                </div>
+
+                <!--Object 3-->
+                <div class="project">
+                    <img src="resources/under-constr-3x4-small.png" alt="Rosetta Code">
+                    <p>The challenge:</p>
+                    <p>Python Challenges</p>
+                </div>
+
+                <!--Object 4-->
+                <div class="project">
+                    <img src="resources/under-constr-3x4-small.png" alt="Project4">
+                    <p>Project 4:</p>
+                    <p>Desription</p>
+                </div>
+
+            </div>
         </div>
 
-        <div class="main-content">
-            <div class="project">
-                <a href="https://mikezolo.github.io/excursion" target="_blank"><img src="resources/excursion-preview1.png" alt="Excursion Project"></a>
-                <p><a href="https://github.com/mikezolo/excursion" target="_blank" alt="Excursion Poject at GitHub">Excursion Repo</a>:</p>
-                <p>Git-CSS-HTML</p>
-            </div>
-            <div class="project">
-                <img src="resources/under-constr-3x4-small.png" alt="PhySec Project">
-                <p><a href="https://github.com/mikezolo/physec" target="_blank" alt="PhySec Poject at GitHub">PhySec Repo</a>:</p>
-                <p>Django & SQLite</p>
-            </div>
-            <div class="project">
-                <img src="resources/under-constr-3x4-small.png" alt="Rosetta Code">
-                <p>The challenge:</p>
-                <p>Python Challenges</p>
-            </div>
-            <div class="project">
-                <img src="resources/under-constr-3x4-small.png" alt="Project4">
-                <p>Project 4:</p>
-                <p>Desription</p>
-            </div>
-        </div>
-    </div>
+        <!--LOREM IPSUM BLOCK (customized)-->
+        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain</p>
+        <br>
 
-    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain</p>
-    <p> </p>
+<!--INFO BLOCK (customized)-->        
     <br>
-<p class="infoblock">*Work in progress. Some features and links may be unavailable for the moment</p>
-<br>
-<br>
+    <p class="infoblock">*Work in progress. Some features and links may be unavailable for the moment.</p>
+    <br>
+    <br>
 
-    <div class="bottom-links">
+<!--CONTACT LINKS (inheritable)-->
+    <hr>        
+    <div class="contact">
         <a class="detailer">Contact: </a>
         <a href="https://www.linkedin.com/in/mikezolo/" target="_blank"> LinkedIn </a>
         <a href="https://github.com/mikezolo/" target="_blank"> GitHub </a>
         <a href="https://twitter.com/mikezolo_pro" target="_blank"> Twitter </a>
         <a href="mailto:mike.zolotarenko@gmail.com"> Email </a>
     </div>
-    <p> </p>
+    <hr>
+    <br>
     <br>
 
-    <footer><p id="copyright"><a id="copyright" href="https://github.com/mikezolo/mikezolo.github.io/blob/main/LICENSE">MIT License</a>| © 2024 Michael Zolotarenko</p></footer></body>
+<!--FOOTER (inheritable)-->        
+    <footer>
+        <p class="copyright"><a class="copyright" href="https://github.com/mikezolo/mikezolo.github.io/blob/main/LICENSE">MIT License</a> | © 2024 Michael Zolotarenko
+            <a href="https://www.linkedin.com/in/mikezolo/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/mikezolo/" target="_blank">GitHub</a>
+            <a href="https://twitter.com/mikezolo_pro" target="_blank">Twitter</a>
+            <a href="mailto:mike.zolotarenko@gmail.com">Email</a>
+        </p>
+    </footer>
+</body>
 </html>
