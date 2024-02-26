@@ -238,6 +238,10 @@ footer a {
     width: 180px;
 }
 
+.project p {
+    max-width: 180px;
+}
+
 .project img {
     height: 200px;
     width: 150px;
