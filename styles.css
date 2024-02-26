@@ -10,9 +10,16 @@
     position: relative;
 }
 
+/* RESOLVE THE CONFLICT: at the window resizing, nav bar covers the upper rows of the underlying body elements.
+Define a CSS variable to hold the height of the navigation bar */
+:root {
+  --nav-height: 70px; /* Update this value as per your actual navigation bar height */
+}
+
 body {
-    margin-top: 70px; /* Ensure body content starts below the nav bar */
-    padding-top: 0; /* Reset padding-top */}
+    margin-top: calc(var(--nav-height) + 20px); /* Dynamic margin based on nav height */
+    padding-top: 0; /* Reset padding-top */
+}
 
 /* UPPER NAV BAR Settings */
 nav {
