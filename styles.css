@@ -175,7 +175,7 @@ footer a {
 
 .copyright {
     text-align: center;
-    margin: 0; /* Reset margin to remove default spacing */
+    margin: 0 auto; /* Reset margin to remove default spacing */
 }
 
 /* * * -------------  PAGE-SPECIFIC SETTINGS (local)  ------------- * * */
@@ -189,7 +189,7 @@ footer a {
     align-items: flex-start;
     text-align: left;
     min-width: 300px;
-    margin: 30px 10px;
+    margin: 30px 0;
 }
 
 /* SIDE NAV BAR settings*/
