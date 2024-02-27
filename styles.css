@@ -112,12 +112,12 @@ h5 {
 .inner-head {
     text-align: left;
     padding: 5px;
+}
 
 .small-userpic {
     width: 100px;
     border-radius: 100%;
-    position: center;
-    object-align: center;
+    object-align: right;
     margin: 20px auto 10px;
 }
 
