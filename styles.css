@@ -104,6 +104,14 @@ h5 {
     font-weight: 500;
 }
 
+.small-userpic {
+    width: 100px;
+    border-radius: 100%;
+    position: center;
+    object-align: center;
+    margin: 20px auto 10px;
+}
+
 /* PARAGRAPH settings*/
 p {
     text-align: justify;
