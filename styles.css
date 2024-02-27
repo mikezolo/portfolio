@@ -107,6 +107,12 @@ h5 {
 .uni-head {
     display: flex;
     position: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.uni-head h4, h5 {
+    text-align: left;
 }
 
 .inner-head {
@@ -119,7 +125,7 @@ h5 {
     border-radius: 100%;
     object-align: right;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 /* PARAGRAPH settings*/
