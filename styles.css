@@ -136,6 +136,7 @@ p {
     min-width: 300px;
     margin: 10px auto; /* Centering the paragraph horizontally */
     padding: 15px;
+    font-size: 125%;
 }
 
 /* INFO BLOCK settings */
