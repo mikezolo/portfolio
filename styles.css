@@ -104,6 +104,15 @@ h5 {
     font-weight: 500;
 }
 
+.uni-head {
+    display: flex;
+    position: center;
+}
+
+.inner-head {
+    text-align: left;
+    padding: 5px;
+
 .small-userpic {
     width: 100px;
     border-radius: 100%;
