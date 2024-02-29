@@ -1,4 +1,3 @@
-<!-- mikezolo / PORTFOLIO / index.html-->
 <!DOCTYPE html>
 <html>
 
@@ -6,8 +5,9 @@
 <head>
     <title>Portfolio - Michael Zolotarenko</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
-     <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=2.0, user-scalable=yes,minimum-scale=0.65"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=2.0, user-scalable=yes,minimum-scale=0.65"/>
 </head>
+
 <body>
 
 <!--TOP NAV BAR (inheritable)-->
@@ -20,83 +20,119 @@
     <a href="https://www.freedombirds.help" target="_blank"><button>Help UA 🇺🇦</button></a>
 </nav>
 
-<!--UNIVERSAL HEADER (inheritable)-->
-    <div class="uni-head">
+<!--UNIVERSAL HEADER (inheritable) + PAGE TITLE (customized)-->
+<div class="uni-head">
+    <div>
         <img class="small-userpic" src="https://avatars.githubusercontent.com/u/155497122?v=4">
-        <div class="inner-head">
-            <h4>Michael Zolotarenko</h4>
-            <h5>Python Developer</h5>
-        </div>
     </div>
-    <hr>
-
-<!--PAGE HEADING(S) (customized)-->
-    <h2>Portfolio Projects</h2>
+    <div>
+        <h4>Michael Zolotarenko</h4>
+        <h5>Python Developer</h5>
+    </div>
+</div>
+<hr>
+<h2>Portfolio Projects</h2>
+<br>
 
 <!--PROJECTS CONTAINER (local)-->
-    <div class="container">
+<div class="container">
 
-        <!--PROJECT PREVIEW BLOCK (local)-->
-        <div class="main-content">
+    <!--PROJECT PREVIEW BLOCK (local)-->
+    <!--Object 1-->
+    <div class="project">
+        <h4>Excursion app</h4>            
+        <button><a href="https://mikezolo.github.io/excursion" target="_blank"><img src="resources/excursion-preview1.png" alt="Excursion Project"></a></button>
+        <div>
+            <ul id="ul01"><strong>
+                <li>Git</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Waterfall</li>
+                <li>Scrum</li><hr>
+            <a href="https://mikezolo.github.io/excursion" target="_blank" alt="Excursion Project">Open the app</a><br>
+            <a href="https://github.com/mikezolo/excursion" target="_blank" alt="Excursion Project at GitHub">View repository</a>
+            </strong></ul>                
+        </div>    
+        <p>Excursion is a simple web project aimed at practicing basic Git skills while showcasing proficiency in HTML and CSS. The objective of the project was to produce a working copy of a web application based solely on a screenshot and a redline mock provided by Codecademy.</p>
+    </div> 
 
-            <!--Object 1-->
-            <div class="project">
-                <h4>Excursion app</h4><br>
-                <p><strong>Git - CSS - HTML - Waterfall - Scrum</strong></p>
-                <a href="https://mikezolo.github.io/excursion" target="_blank"><img src="resources/excursion-preview1.png" alt="Excursion Project"></a>
-                <p><a href="https://github.com/mikezolo/excursion" target="_blank" alt="Excursion Project at GitHub">Excursion repo</a></p>
-            </div>
-
-            <!--Object 2-->
-            <div class="project">
-                <h4>PhySec app</h4><br>
-                <p><strong>Django - SQLite - Agile - Kanban</strong></p>
-                <img src="resources/under-constr-3x4-small.png" alt="PhySec Project">
-                <p><a href="https://github.com/mikezolo/physec" target="_blank" alt="PhySec Project at GitHub">PhySec repo</a></p>
-            </div>
-
-            <!--Object 3-->
-            <div class="project">
-                <h4>Python Code Challenge</h4>
-                <p><hr><strong>Python Data Analysis</strong></p>
-                <img src="resources/under-constr-3x4-small.png" alt="Rosetta Code">
-                <p>The challenge: &lt;___&gt;</p>
-            </div>
-
-            <!--Object 4-->
-            <div class="project">
-                <h4>GitHub Pages</h4><br>
-                <p><hr><strong>HTML - CSS - GitHub - Agile - Jira</strong></p>
-                <img src="resources/portfolio-pr-medium.png" alt="This Portfolio">
-                <p><a href="https://github.com/mikezolo/portfolio/blob/main/README.md#portfolio" target="_blank" alt="Portfolio Project at GitHub">Portfolio repo</a></p>
-                <p>This Portfolio site<br>is my project too!</p>
-            </div>
-
-        </div>
+    <!--Object 2-->
+    <div class="project">
+        <h4>My GitHub Pages</h4>            
+        <button><a href="https://github.com/mikezolo/mikezolo.github.io"><img src="resources/mikezolo-home.png" alt="My Home Page"></a></button>
+        <div>
+            <ul id="ul04"><strong>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+                <li>Agile</li>
+                <li>Jira tools</li><hr>
+            <a href="https://github.com/mikezolo/mikezolo.github.io" target="_blank" alt="Excursion Project">My Home Page</a><br>
+            <a href="https://github.com/mikezolo/portfolio/blob/main/README.md#portfolio" target="_blank" alt="Portfolio README">View README</a>
+            </strong></ul>
+        </div>    
+        <p>This Portfolio site at GitHub Pages is my project too!</p>
     </div>
 
-    <!--LOREM IPSUM BLOCK (customized)-->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. </p>
-    <br>
+    <!--Object 3-->
+    <div class="project">
+        <h4>ABC Problem Code Challenge</h4>            
+        <button><a href="esources/rosetta-abc-problem-solution.pdf" target="_blank"><img src="resources/rosetta-code.png" alt="Rosetta Code"></a></button>
+        <div>
+            <ul id="ul03"><strong>
+                <li>Python</li>
+                <li>Data Analysis</li>
+                <li>Code Challenges</li><hr>
+            <a href="https://rosettacode.org/wiki/ABC_problem" target="_blank" alt="ABC Problem">View ABC Problem page</a><br>
+            <a href="resources/rosetta-abc-problem-solution.pdf" target="_blank" alt="Rosetta ABC Problem Solution">View my solution</a><br>
+            </strong></ul>
+        </div>    
+        <p><a href="https://rosettacode.org/wiki/Rosetta_Code">Rosetta Code</a>'s string analysis challenge: create a function to determine if a word can be spelled using provided blocks.</p>
+    </div> 
+
+    <!--Object 4-->
+    <div class="project">
+        <h4>PhySec app</h4>            
+        <button><a href="" target="_blank"><img src="resources/under-constr-3x4-small.png" alt="PhySec Project"></a></button>
+        <div>
+            <ul id="ul02"><strong>
+                <li>Django</li>
+                <li>SQLite</li>
+                <li>Agile</li>
+                <li>Kanban</li><hr>
+            <a href="https://mikezolo.github.io/physec" target="_blank" alt="PhySec Project"><i>Coming soon</i></a><br>
+            <a href="https://github.com/mikezolo/physec" target="_blank" alt="PhySec Project at GitHub">View repository</a>
+            </strong></ul>
+        </div>    
+        <p>PhySec is an online tool that offers customized physical security recommendations for various types of real estate (e.g. houses, offices, industrial facilities, and more). Users can receive relevant security suggestions based on their selected object type.</p>
+    </div> 
+
+</div> <!-- Closing tag for .container -->
+
+<!--LOREM IPSUM BLOCK (customized)-->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. </p>
+<br>
 
 <!--INFO BLOCK (customized)-->        
-    <p class="infoblock">⚒︎ Work in progress. Some features and links may be unavailable for the moment.</p>
-    <br>
+<p class="infoblock">⚒︎ Work in progress. Some features and links may be unavailable for the moment.</p>
+<br>
 
 <!--FOOTER (inheritable)-->        
-    <br>
-    <br>
-    <br>
-    <footer>
-        <p>
-            <a class="license" href="https://github.com/mikezolo/mikezolo.github.io/blob/main/LICENSE">MIT License</a>
-            | © 2024 Michael Zolotarenko
-            <a class="contact" href="https://www.linkedin.com/in/mikezolo/" target="_blank">LinkedIn</a>
-            <a class="contact" href="https://github.com/mikezolo/" target="_blank">GitHub</a>
-            <a class="contact" href="https://twitter.com/mikezolo_pro" target="_blank">Twitter</a>
-            <a class="contact" href="mailto:mike.zolotarenko@gmail.com" target="_blank">Email</a>
-        </p>
-    </footer>
-    <br>
+<br>
+<br>
+<br>
+<footer>
+    <p>
+        <a class="license" href="https://github.com/mikezolo/mikezolo.github.io/blob/main/LICENSE">MIT License</a>
+        | © 2024 Michael Zolotarenko
+        <a class="contact" href="https://www.linkedin.com/in/mikezolo/" target="_blank">LinkedIn</a>
+        <a class="contact" href="https://github.com/mikezolo/" target="_blank">GitHub</a>
+        <a class="contact" href="https://twitter.com/mikezolo_pro" target="_blank">Twitter</a>
+        <a class="contact" href="mailto:mike.zolotarenko@gmail.com" target="_blank">Email</a>
+    </p>
+</footer>
+<br>
+
 </body>
 </html>
