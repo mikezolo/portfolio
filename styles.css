@@ -1,6 +1,6 @@
-/* mikezolo / PORTFOLIO / styles.css */
+/*^ mikezolo / PORTFOLIO / styles.css */
 
-/* * * --------------  GENERAL RULES  -------------- * * */
+/* * * ---  GENERAL RULES  -------------- * * */
 * {
     font-family: Tahoma, Helvetica, Geneva, sans-serif;
     text-align: center;
@@ -8,13 +8,12 @@
 
 /* Reset default margin and padding */
 body {
-    position: relative;
     margin: 0;
     padding: 0;
     border: none;
 }
 
-/* * * ------------ INHERITABLE elements  ------------ * * */ 
+/* * * --- INHERITABLE elements  ----------- * * */ 
 
 /* TOP NAV BAR Settings */
 nav {
@@ -75,7 +74,7 @@ h4 {
     color: #555;
     font-size: 22px;
     font-weight: 600;
-    line-height: 1.2;   
+    line-height: 0.9;   
 }
 
 h5 {
@@ -83,7 +82,7 @@ h5 {
     color: #888;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.1;   
+    line-height: 1;   
 }
 
 h6 {
@@ -94,20 +93,11 @@ h6 {
 }
 
 .uni-head {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    position: center;
-    padding: 5px;
-    margin: 5px;
-}
-
-.uni-head h4, h5 {
-    text-align: left;
-}
-
-.inner-head {
-    text-align: left;
-    padding: 5px;
+    padding: 10px auto 5px;
+    margin: 0 ;
+    max-width: 80%;
 }
 
 .small-userpic {
@@ -115,19 +105,36 @@ h6 {
     border-radius: 100%;
     object-position: right;
     margin: 0;
-    padding: 5px;
+    padding: 10px 15px 0;
 }
 
-/* PARAGRAPH settings*/
+.uni-head h4, h5 {
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.uni-head h2 {
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/** PARAGRAPH settings */
 p {
     text-align: justify;
     max-width: 800px;
     min-width: 35%;
     margin: 10px auto; /* Centering the paragraph horizontally */
-    padding: 10px 15px;
+    padding: 10px 15px 0;
 }
 
-/* INFO BLOCK settings */
+ul {
+    text-align: left;
+}
+
+/** INFO BLOCK settings */
 .infoblock {
     font-size: 16px;
     font-weight: lighter;
@@ -139,7 +146,7 @@ p {
     padding: 10px;
 }
 
-/* FOOTER BLOCK */
+/** FOOTER BLOCK */
 footer {
     background-color: #333;
     color: #fff;
@@ -150,7 +157,7 @@ footer {
     width: 100%;
 }
 
-/* Footer specific settings */
+/** Footer specific settings */
 footer p {
     text-align: center;
     max-width: 100%;
@@ -191,53 +198,86 @@ footer a {
     padding-bottom: 10px;
 }
 
-/* * * -------------  PAGE-SPECIFIC SETTINGS (local)  ------------- * * */
+/*** ======  PAGE-SPECIFIC SETTINGS (local)  ====== * * */
 
-/* PROJECTS BLOCK */
-/* BLOCK settings */
+/** PROJECTS BLOCK */
+/*? BLOCK settings */
 .container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+    width: 100%;
+    padding: 15px auto;
+    margin: 0;
+    display: flex; /*flex property */
+    flex-wrap: wrap; /*flex property */
+    justify-content: center; /*flex property */
+    align-items: stretch; /*flex property */
+    gap: 15px; /*flex property */
     text-align: left;
-    min-width: 300px;
-    margin: 30px 0;
 }
 
-/* PROJECT catalogue div settings */
-.main-content {
+/*? PROJECT catalog div settings */
+.project {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    gap: 10px;
-    margin-left: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 28em; 
+    height: auto;
+    border: #999 solid 5px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    float: left;
+    text-align: left;
 }
 
-.project {
-    display: block;
-    align-items: center;
-    background-color: #ddd;
+.project h4 {
+    text-align: left;
+    width: 100%;
+    margin: 0 10px 10px;
+}
+
+.project button {
     padding: 10px;
-    justify-content: center;
-    width: 180px;
+    margin: 8px 0 0 10px;
+    border: solid 3px #000;
+    border-radius: 8px;
 }
 
-.project p {
-    width: 160px;
+.project button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.project a {
+    color: #666;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+.project a p ul li {
+    width: 290px;
     margin: 0;
     text-align: left;
+    padding: 3px 0;
+    background-color: #fff;
+}
+
+.project ul li {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: square;
 }
 
 .project img {
-    height: 200px;
-    width: 150px;
+    height: 16.5em;
+    width: 11em;
     border-radius: 5px;
-    object-position: center;
+    float: left;
+    border: 3px solid #333;
+    background-color: #eee;
+    padding: 2px;
 }
 
-.project img a:hover {
-    background-color: #666;
-    color: #fff;
-}
+/**======================== END ======================= **/
