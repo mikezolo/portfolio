@@ -1,5 +1,7 @@
 /*^ mikezolo / PORTFOLIO / styles.css */
 
+/* Prefixed by https://autoprefixer.github.io / PostCSS: v8.4.14 / Autoprefixer: v10.4.7 / Browsers: last 4 version */
+
 /* * * ---  GENERAL RULES  -------------- * * */
 * {
     font-family: Tahoma, Helvetica, Geneva, sans-serif;
@@ -22,31 +24,40 @@ nav {
     position: sticky;
     top: 0;
     min-width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     z-index: 999;
 }
 
 nav button {
     background-color: #fff;
-    color: #333;
+    color: #000;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     height: 40px;
     width: 150px;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.4em;
     font-weight: bolder;
-    transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+         -o-transition-duration: 0.1s;
+            transition-duration: 0.1s;
 }
 
 button:hover {
     background-color: #666;
-    color: white;
+    color: #fff;
     border: 2px #000;
 }
 
@@ -58,29 +69,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 2.8em;
     color: #000;
     margin: 20px auto 10px;
     line-height: 1.1;
 }
 
 h3 {
-    color: #666;
-    font-size: 38px;
+    color: #444;
+    font-size: 2.2em;
     line-height: 1.2;   
 }
 
 h4 {
-    color: #555;
-    font-size: 22px;
+    color: #444;
+    font-size: 1.8em;
     font-weight: 600;
     line-height: 0.9;   
 }
 
 h5 {
     text-align: center;
-    color: #888;
-    font-size: 20px;
+    color: #000;
+    font-size: 1.6em;
     font-weight: 500;
     line-height: 1;   
 }
@@ -88,13 +99,17 @@ h5 {
 h6 {
     text-align: left;
     font-size: 16px;
-    color: #222;
+    color: #000;
     margin: 10px auto;
 }
 
 .uni-head {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px auto 5px;
     margin: 0 ;
     max-width: 80%;
@@ -103,22 +118,32 @@ h6 {
 .small-userpic {
     width: 80px;
     border-radius: 100%;
-    object-position: right;
+    -o-object-position: right;
+       object-position: right;
     margin: 0;
     padding: 10px 15px 0;
 }
 
 .uni-head h4, h5 {
     text-align: center;
-    align-items: stretch;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .uni-head h2 {
     text-align: center;
-    align-items: stretch;
-    justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /** PARAGRAPH settings */
@@ -128,17 +153,25 @@ p {
     min-width: 35%;
     margin: 10px auto; /* Centering the paragraph horizontally */
     padding: 10px 15px 0;
+    font-size: 1.1em;
 }
 
 ul {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+a {
+    color: #000;
+    font-size: 1.1em;
     text-align: left;
 }
 
 /** INFO BLOCK settings */
 .infoblock {
-    font-size: 16px;
+    font-size: 1.1em;
     font-weight: lighter;
-    color: #666;
+    color: #444;
     min-width: 20%;
     max-width: 1000px;
     text-align: center;
@@ -164,7 +197,7 @@ footer p {
     min-width: 200px;
     margin: 0;
     padding: 5px 20px 10px;
-    font-size: 20px;
+    font-size: 1.4em;
     line-height: 1.6;
 }
 
@@ -206,23 +239,42 @@ footer a {
     width: 100%;
     padding: 15px auto;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; /*flex property */
-    flex-wrap: wrap; /*flex property */
-    justify-content: center; /*flex property */
-    align-items: stretch; /*flex property */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; /*flex property */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /*flex property */
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; /*flex property */
     gap: 15px; /*flex property */
     text-align: left;
 }
+/* >> Up to here OK!!! workflow comment >> REMOVE */
 
 /*? PROJECT catalog div settings */
+
 .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 28em; 
-    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 28em; /*todo: test View */
+    height: auto; /*todo: test View */
     border: #999 solid 5px;
     border-radius: 5px;
     padding: 10px 15px;
@@ -237,10 +289,10 @@ footer a {
 }
 
 .project button {
-    padding: 10px;
-    margin: 8px 0 0 10px;
-    border: solid 3px #000;
-    border-radius: 8px;
+    padding: 2px;
+    margin: 12px 0 0 10px;
+    border: #999 solid 3px;
+    border-radius: 5px;
 }
 
 .project button:hover {
@@ -249,9 +301,9 @@ footer a {
 }
 
 .project a {
-    color: #666;
+    color: #000;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.1em;
     text-align: left;
 }
 
@@ -261,6 +313,7 @@ footer a {
     text-align: left;
     padding: 3px 0;
     background-color: #fff;
+    /*todo: position <p> and <ul> to the right of the img */
 }
 
 .project ul li {
@@ -271,6 +324,7 @@ footer a {
 }
 
 .project img {
+    position: static;
     height: 16.5em;
     width: 11em;
     border-radius: 5px;
@@ -280,4 +334,4 @@ footer a {
     padding: 2px;
 }
 
-/**======================== END ======================= **/
+/*^ *======================== THE END ======================= * ^*/
